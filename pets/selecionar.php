@@ -30,7 +30,7 @@ include "../includes/conexao.php";
         ?>
         <tr>
             <td><?php echo $um_pet['id_animal']; ?></td>
-            <td><img src="<?php echo $um_pet['foto'];?>" width="100"></td>
+            <td><img src="<?php echo $um_pet['foto']; ?>" width="100"></td>
             <td><?php echo $um_pet['nome']; ?></td>
             <td><?php echo $um_pet['idade']; ?></td>
             <td><?php echo $um_pet['sexo']; ?></td>
