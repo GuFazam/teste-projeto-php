@@ -42,7 +42,7 @@ include "../includes/conexao.php";
             <td>
                 <a href="#">Visualizar</a>
                 <a href="#">Editar</a>
-                <a href="#">Excluir</a>
+                <a href="deletar.php?id_animal=<?php echo $um_pet['id_animal'];?>">Excluir</a>
             </td>
         </tr>
         <?php
@@ -51,5 +51,6 @@ include "../includes/conexao.php";
 </table>
 
 <?php 
+mysqli_close($conexao);
 include "../includes/rodape.php";
 ?>

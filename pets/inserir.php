@@ -1,15 +1,16 @@
 <?php 
 include "../includes/conexao.php";
 
+$foto = $_POST['foto'];
 $nome = $_POST['nome'];
-$idade = $_POST['nome'];
-$sexo = $_POST['nome'];
-$especie = $_POST['nome'];
-$porte = $_POST['nome'];
-$cidade = $_POST['nome'];
-$estado = $_POST['nome'];
-$comportamento = $_POST['nome'];
-$sql = "insert into animais(nome) values('$nome')";
+$idade = $_POST['idade'];
+$sexo = $_POST['sexo'];
+$especie = $_POST['especie'];
+$porte = $_POST['porte'];
+$cidade = $_POST['cidade'];
+$estado = $_POST['estado'];
+$comportamento = $_POST['comportamento'];
+$sql = "insert into animais(foto, nome, idade, sexo, especie, porte, cidade, estado, comportamento) values('$foto', '$nome', '$idade', '$sexo', '$especie', '$porte', '$cidade', '$estado', '$comportamento')";
 mysqli_query($conexao, $sql);
 mysqli_close($conexao);
 
