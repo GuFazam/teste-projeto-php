@@ -40,7 +40,7 @@ include "../includes/conexao.php";
             <td><?php echo $um_pet['estado']; ?></td>
             <td><?php echo $um_pet['comportamento']; ?></td>
             <td>
-                <a href="#">Visualizar</a>
+                <a href="visualizar.php?id_animal=<?php echo $um_pet['id_animal'];?>" title="Ver completo">Visualizar</a>
                 <a href="#">Editar</a>
                 <a href="deletar.php?id_animal=<?php echo $um_pet['id_animal'];?>">Excluir</a>
             </td>
