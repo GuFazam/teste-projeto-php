@@ -30,18 +30,18 @@ include "../includes/conexao.php";
         ?>
         <tr>
             <td><?php echo $um_pet['id_animal']; ?></td>
-            <td><img src="<?php echo $um_pet['foto']; ?>" width="100"></td>
-            <td><?php echo $um_pet['nome']; ?></td>
-            <td><?php echo $um_pet['idade']; ?></td>
-            <td><?php echo $um_pet['sexo']; ?></td>
-            <td><?php echo $um_pet['especie']; ?></td>
-            <td><?php echo $um_pet['porte']; ?></td>
-            <td><?php echo $um_pet['cidade']; ?></td>
-            <td><?php echo $um_pet['estado']; ?></td>
+            <td><img src="<?php echo $um_pet['foto'];?>" width="100"></td>
+            <td><?php echo $um_pet['nome'];?></td>
+            <td><?php echo $um_pet['idade'];?></td>
+            <td><?php echo $um_pet['sexo'];?></td>
+            <td><?php echo $um_pet['especie'];?></td>
+            <td><?php echo $um_pet['porte'];?></td>
+            <td><?php echo $um_pet['cidade'];?></td>
+            <td><?php echo $um_pet['estado'];?></td>
             <td><?php echo $um_pet['comportamento']; ?></td>
             <td>
                 <a href="visualizar.php?id_animal=<?php echo $um_pet['id_animal'];?>" title="Ver completo">Visualizar</a>
-                <a href="#">Editar</a>
+                <a href="editar.php?id_animal=<?php echo $um_pet['id_animal'];?>">Editar</a>
                 <a href="deletar.php?id_animal=<?php echo $um_pet['id_animal'];?>">Excluir</a>
             </td>
         </tr>
