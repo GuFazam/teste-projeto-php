@@ -30,15 +30,15 @@ endwhile;
 ?>
 <h1>Editar pet <?php echo $id_animal; ?></h1>
 <form method="post" action="atualizar.php?id_animal=<?php echo $id_animal;?>">
-<img src="<?php echo $foto; ?>" width="100" value="<?php echo $foto;?>"><br>
+<!-- foto: --><img src="<?php echo $foto; ?>" width="100" value="<?php echo $foto;?>"><br>
     Nome: <input name="nome" type="text" value="<?php echo $nome;?>"><br>
-    Idade: <input name="nome" type="text" value="<?php echo $idade;?>"><br>
-    Sexo: <input name="nome" type="text" value="<?php echo $sexo;?>"><br>
-    Espécie: <input name="nome" type="text" value="<?php echo $especie;?>"><br>
-    Porte: <input name="nome" type="text" value="<?php echo $porte;?>"><br>
-    Cidade: <input name="nome" type="text" value="<?php echo $cidade;?>"><br>
-    Estado: <input name="nome" type="text" value="<?php echo $estado;?>"><br>
-    Comportamento: <input name="nome" type="text" value="<?php echo $comportamento;?>"><br>
+    Idade: <input name="idade" type="text" value="<?php echo $idade;?>"><br>
+    Sexo: <input name="sexo" type="text" value="<?php echo $sexo;?>"><br>
+    Espécie: <input name="especie" type="text" value="<?php echo $especie;?>"><br>
+    Porte: <input name="porte" type="text" value="<?php echo $porte;?>"><br>
+    Cidade: <input name="cidade" type="text" value="<?php echo $cidade;?>"><!--<br>-->
+    Estado: <input name="estado" type="text" value="<?php echo $estado;?>"><br>
+    Comportamento: <input name="comportamento" type="text" value="<?php echo $comportamento;?>"><br>
     <button type="submit">Atualizar</button>
 </form>
 
